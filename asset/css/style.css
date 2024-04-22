@@ -1,0 +1,93 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  margin: 50px;
+  padding: 50px;
+  background-color: #f0f0f0; /* Color de fondo para mejor visualización */
+  background-image: url(/asset/img/caida-de-petalos_opt.png);
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: center 75%;
+}
+.header-image img {
+  width: 150px; /* Ajuste de tamaño de la imagen, modifícalo según necesites */
+  height: auto;
+}
+.contenedor-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Espacio entre los productos */
+  margin: 0 auto; /* Centra el contenedor en la página */
+  max-width: 800px; /* O la anchura máxima que prefieras para tu contenedor */
+}
+.header-text {
+  font-size: 20px;
+}
+.producto {
+  border: 1px solid #ccc; /* Borde para visualizar los límites del producto */
+  padding: 10px; /* Espaciado interno */
+  width: 80%; /* Ancho del producto respecto a su contenedor */
+  display: flex;
+  flex-direction: row; /* Orientación horizontal de los elementos internos */
+  align-items: flex-start; /* Alinea los elementos internos al inicio verticalmente */
+  background-color: blanchedalmond;
+}
+
+.producto img {
+  margin-right: 15px; /* Espacio entre la imagen y el texto */
+}
+
+.descripcion h2 {
+  font-family: "Alfa Slab One", serif;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+}
+.descripcion p {
+  margin: 0; /* Remueve los márgenes por defecto */
+  padding: 2px 0; /* Añade un poco de espaciado vertical para mejor legibilidad */
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Esto asegura que el texto (h2 y p) estén uno debajo del otro como si fuera un salto de línea */
+.descripcion {
+  display: flex;
+  flex-direction: column;
+}
+.descripcion .boton-detalle {
+  background-color: #4caf50; /* Verde */
+  color: white;
+  padding: 10px;
+  margin: 30px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.descripcion .boton-detalle:hover {
+  background-color: #45a049;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Ajusta la altura según tus necesidades */
+  background-color: #333; /* Color de fondo */
+  color: #fff; /* Color de texto */
+  border-radius: 20px; /* Bordes redondeados */
+  margin: 20px; /* Margen alrededor del footer */
+  padding: 20px; /* Espaciado interno */
+}
+.social-icons a {
+  color: #fff; /* Color de los iconos */
+  margin-left: 15px; /* Espaciado entre iconos */
+}
